@@ -14,5 +14,6 @@ export const openApiDocument = generateOpenApiDocument(appRouter, {
   title: "Demo app API documentation",
   description: "",
   version: versionDisplayed,
-  baseUrl: "/api",
+  baseUrl: "http://localhost:3000/api",
+  docsUrl: "http://localhost:3000/api/docs",
 });

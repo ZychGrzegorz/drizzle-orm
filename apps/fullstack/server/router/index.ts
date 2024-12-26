@@ -1,8 +1,8 @@
 import { router } from "../trpc";
-import { GeneralRouter } from "./generalRouter";
+import { CustomersRouter } from "./customersRouter";
 
 export const appRouter = router({
-    general: GeneralRouter
+    customers: CustomersRouter
    });
    
    export type AppRouter = typeof appRouter;

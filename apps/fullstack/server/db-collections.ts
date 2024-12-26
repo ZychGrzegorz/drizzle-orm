@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 export const dbCollectionSchema = z.enum([
-  "general",
+  "customers",
 ]);
 
 export const DbCollections = dbCollectionSchema.enum;

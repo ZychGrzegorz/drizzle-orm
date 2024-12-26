@@ -5,7 +5,7 @@ import { Button } from "@repo/ui/components/ui/button";
 import { api } from "~/utils/trpc";
 
 export default function Page() {
-  const { data } = api.general.main.useQuery({name: 'test'});
+  const { data } = api.customers.getCustomerById.useQuery({ id: 1 });
 
   console.log(data);
   return (

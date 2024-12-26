@@ -1,8 +1,8 @@
-import { getGeneralService } from "./general";
+import { getCustomersService } from "./customers/customers";
 
 export const getServices = async () => {
     return {
-      generalService: await getGeneralService(),
+      customerService: await getCustomersService(),
   
     };
   };
